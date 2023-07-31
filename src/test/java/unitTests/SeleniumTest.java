@@ -9,15 +9,15 @@ package unitTests;
    import org.openqa.selenium.By;
    import org.openqa.selenium.Keys;
    import org.openqa.selenium.WebElement;
-   import org.openqa.selenium.firefox.FirefoxDriver;
+     import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumTest {
-    private static FirefoxDriver driver;
+    private static ChromeDriver driver;
     WebElement element;
 
     @BeforeClass
     public static void openBrowser(){
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
      }
 
